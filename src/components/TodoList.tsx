@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useTodoStore } from "../todo/useTodoStore"
+import { useTodoStore } from "../todoStore/useTodoStore"
 
 
 const TodoList = () => {
