@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useTodoStore } from "../todoStore/useTodoStore"
 
-
 const TodoList = () => {
     const [editIndex, setEditIndex] = useState<number | null>(null);
     const [editTitle, setEditTitle] = useState("");
@@ -20,8 +19,6 @@ const TodoList = () => {
         editTodo(index, { title: editTitle, complated: editComplated })
         setEditIndex(null);
     }
-
-    console.log("Data coming")
 
     return (
         <div className="space-y-1">
@@ -45,7 +42,6 @@ const TodoList = () => {
                             </div>
                         </div>
                     }
-
                 </div>
             ))}
         </div>
